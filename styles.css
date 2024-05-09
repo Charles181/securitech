@@ -1,0 +1,224 @@
+body{
+    background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: sans-serif;
+    font-family: 'Roboto', Sans-serif;
+    flex-direction: column;
+    background-image:url(1358905.png);
+}
+
+.description{
+    max-width: 60%;
+}
+.container{
+    background: #101138;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 25px 10px 15px 0px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    opacity:90%;
+    margin-bottom: 30px;
+
+}
+
+/* Slider */
+.slider {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .thumbnails {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .thumbnail {
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+
+  .container2{
+    background-color: #1a1a1f;
+    color:white;
+    text-align: center;
+    
+  }
+
+  .fab:hover, .btn:hover{
+    transform: scale(150%);
+  }
+
+  button[type="submit"]:hover,
+  .forgot-password:hover {
+    background-color: #18c368; /* Color de fondo del botón al pasar el mouse */
+  }
+
+  /*Styling for password generator*/
+  .container-p{
+    max-width: 500px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 40px 30px;
+    background-color: #ffffff;
+    box-shadow: -8px 8px 10px rgb(0, 0, 0, 0.3);
+}
+
+.container-p h1{
+    font-weight: bold;
+    margin-bottom: 36px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.inputBox{
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.inputBox span{
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    color: #333;
+    cursor: pointer;
+}
+
+.passBox{
+    width: 100%;
+    height: 40px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    font-weight: 700;
+    font-size: 16px;
+    outline: none;
+}
+
+.row-p{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px auto;
+}
+
+.row-p p, .row-p label{
+    flex-basis: 60%;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+}
+
+.row-p p{
+    font-weight: 700;
+}
+
+.row-p input[type="checkbox"]{
+    margin-right: 8px;
+}
+
+.getBtn{
+    width: 100%;
+    padding: 12px 0px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color:#ffffff;
+    background-color: #3162cb;
+    cursor:pointer;
+    margin-top: 30px;
+}
+
+.getBtn:hover{
+    background-color: #1d1e20;
+}
+
+input[type="range"]{
+    width: 100%;
+    margin-top: 10px;
+}
+
+#sliderValue{
+    margin-right: 8px;
+}
+
+.passIndicator{
+    width: 100%;
+    height: 4px;
+    background-color: #dfdfdf;
+    position: relative;
+    border-radius: 25px;
+}
+
+.passIndicator::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 50%;
+    border-radius: inherit;
+    transition: width 0.3s ease;
+}
+
+.passIndicator.weak::before{
+    width: 20%;
+    background-color: red;
+}
+
+.passIndicator.medium::before{
+    width: 50%;
+    background-color: yellow;
+}
+
+.passIndicator.strong::before{
+    width: 100%;
+    background-color: #39FF14;
+}
+
+/*Styling for map - location */
+#map {
+  height: 100%;
+}
+
+.custom-map-control-button {
+  background-color: #fff;
+  border: 0;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+  margin: 10px;
+  padding: 0 0.5em;
+  font: 400 18px Roboto, Arial, sans-serif;
+  overflow: hidden;
+  height: 40px;
+  cursor: pointer;
+}
+.custom-map-control-button:hover {
+  background: rgb(235, 235, 235);
+}
+#dashboard{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+}
+
+#map{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 50px;
+}
